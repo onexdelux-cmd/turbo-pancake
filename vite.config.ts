@@ -12,4 +12,12 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    server: {
+      preview: {
+        port: 5000,
+        host: true,
+      },
+    },
+  },
 });
